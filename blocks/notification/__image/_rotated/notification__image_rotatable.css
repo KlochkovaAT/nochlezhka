@@ -1,0 +1,5 @@
+@media screen and (max-width: 920px) {
+  .notification__image_rotatable {
+    transform: scaleX(-1);
+  }
+}
