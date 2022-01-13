@@ -1,0 +1,12 @@
+.popup__donate-head {
+  display: flex;
+  max-width: 320px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768.98px) {
+  .popup__donate-head {
+    max-width: 532px;
+  }
+}
