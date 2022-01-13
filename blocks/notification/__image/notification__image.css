@@ -1,7 +1,7 @@
 .notification__image {
   width: 385px;
   height: 301px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   margin: auto 0;
 }
