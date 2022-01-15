@@ -1,0 +1,9 @@
+.popup__ticket-qty {
+    all: unset;
+    -moz-appearance: textfield;
+    width: 3em;
+    text-align: center;
+  }
+  /* .popup__ticket-qty::-webkit-inner-spin-button {
+    display: none;
+} */
