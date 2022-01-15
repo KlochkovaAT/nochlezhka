@@ -1,4 +1,4 @@
-.popup__donate-text {
+.popup__text {
   margin: 16px auto;
   font-weight: 500;
   font-size: 24px;
@@ -10,13 +10,13 @@
 }
 
 @media screen and (min-width: 768.98px) {
-  .popup__donate-text {
+  .popup__text {
     max-width: 532px;
     margin: 32px auto 16px;
     font-size: 32px;
     line-height: 36px;
   }
-  .popup__donate-text:first-of-type {
+  .popup__text:first-of-type {
     margin: 20px auto 16px;
   }
 }

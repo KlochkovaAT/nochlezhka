@@ -1,4 +1,4 @@
-.popup__donate-close-button-text {
+.popup__title {
   font-weight: 500;
   font-size: 32px;
   line-height: 36px;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (min-width: 768.98px) {
-  .popup__donate-close-button-text {
+  .popup__title {
     font-size: 48px;
     line-height: 52px;
     max-width: 496px;
