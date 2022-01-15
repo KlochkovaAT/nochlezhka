@@ -84,7 +84,6 @@
 @import url(../blocks/popup/__ticket-form/popup__ticket-form.css);
 @import url(../blocks/popup/__ticket-sum/popup__ticket-sum.css);
 @import url(../blocks/popup/__ticket-price/popup__ticket-price.css);
-@import url(../blocks/popup/__ticket-controls/popup__ticket-controls.css);
 @import url(../blocks/popup/__ticket-qty/popup__ticket-qty.css);
 @import url(../blocks/popup/__ticket-btn-decr/popup__ticket-btn-decr.css);
 @import url(../blocks/popup/__ticket-btn-incr/popup__ticket-btn-incr.css);
