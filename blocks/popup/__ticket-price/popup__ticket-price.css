@@ -1,0 +1,14 @@
+.popup__ticket-price {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #7100FF;
+  margin: 0;
+}
+
+@media screen and (min-width: 768.98px) {
+  .popup__ticket-price {
+    font-size: 48px;
+    line-height: 52px;
+  }
+}

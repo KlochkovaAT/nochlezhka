@@ -1,0 +1,20 @@
+.popup__ticket-btn-incr {
+  width: 44px;
+  height: 44px;
+  background-color: #7100FF;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  box-sizing: border-box;
+  border-style: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768.98px) {
+  .popup__ticket-btn-incr {
+    width: 48px;
+    height: 48px;
+    color: #fff;
+  }
+}

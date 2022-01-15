@@ -1,9 +1,43 @@
 .popup__ticket-qty {
-    all: unset;
-    -moz-appearance: textfield;
-    width: 3em;
-    text-align: center;
+  width: 48px;
+  height: 44px;
+  box-sizing: border-box;
+  border: 2px solid #7100FF;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #96949E;
+  font-size: 16px;
+  line-height: 20px;
+  outline: none;
+}
+
+@media screen and (min-width: 768.98px) {
+  .popup__ticket-qty {
+    width: 96px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 24px;
   }
-  /* .popup__ticket-qty::-webkit-inner-spin-button {
-    display: none;
-} */
+}
+
+.popup__ticket-qty::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.popup__ticket-qty::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.popup__ticket-qty {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+.popup__ticket-qty:hover {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+.popup__ticket-qty:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
