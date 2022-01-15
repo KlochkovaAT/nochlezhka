@@ -296,10 +296,12 @@
     <div class="popup__container popup__container_type_donate">
       <form class="popup__donate-form" name="donate" id="donate">
         <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
-        <button type="button" class="popup__donate-close-button page__button">
-          <span class="popup__donate-close-button-text">пожертвовать</span>
-          <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
-        </button>
+        <div class="popup__donate-head">
+          <p class="popup__donate-close-button-text">пожертвовать</p>
+          <button type="button" class="popup__donate-close-button page__button">
+            <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
+          </button>
+        </div>
         <p class="popup__donate-text">сумма</p>
         <div class="popup__sum-of-money-container">
           <button type="button" class="popup__sum-of-money popup__sum-of-money_active page__button">
@@ -317,7 +319,7 @@
           <button type="button" class="popup__sum-of-money page__button">
             <span class="popup__sum-of-money-text">3000 ₽</span>
           </button>
-          <input type="text" name="sum-of-money" id="sum-of-money" placeholder="другая сумма"
+          <input type="number" min="1" name="sum-of-money" id="sum-of-money" placeholder="другая сумма"
             class="popup__sum-of-money-input">
         </div>
         <p class="popup__donate-text">email</p>
