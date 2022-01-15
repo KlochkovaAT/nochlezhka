@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гедонизмфест</title>
+    <link rel="stylesheet" href="./pages/pick-category.css" />
+  </head>
+  <body class="page">
+
+      <header class="header">
+        <div class="header__container">
+          <img src="./images/logo.svg" alt="logo" class="header__logo">
+          <div class="header__menu">
+            <button type="button" class="header__location-button page__button">
+              <img src="./images/location.svg" alt="location" class="header__location-image">
+              <span class="header__location-button-text">Санкт-Петербург</span>
+            </button>
+            <nav class="header__navigation">
+              <a class="header__navigation-link page__link" href="#">
+                <p class="header__link-text">куда пойти</p>
+              </a>
+              <a class="header__navigation-link page__link" href="#">
+                <p class="header__link-text">стать участником</p>
+              </a>
+              <a class="header__navigation-link page__link" href="#">
+                <p class="header__link-text">о фестивале</p>
+              </a>
+            </nav>
+            <a class="header__link page__link" href="#" target="_blank">
+              <img src="./images/like.svg" alt="like" class="header__like-image">
+              <p class="header__link-text">хочу пойти</p>
+            </a>
+            <button class="header__menu-button page__button" type="button">
+              <img src="./images/menu.svg" alt="menu">
+            </button>
+            <button class="header__donate-button page__button" type="button">
+              <span class="header__donate-text">поддержать</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="content content_place_category">
+        <h1 class="content__title content__title_hideable">стать участником</h1>
+        <div class="form">
+          <div class="form__container">
+            <p class="form__step">шаг 1 из 4</p>
+            <div class="form__instruction">
+              <p class="form__heading">выберите категорию</p>
+            </div>
+
+            <form class="form__form" id="pick-category" name="pick-category">
+              <fieldset class="form__input-container form__category">
+                <label class="form-input radio-button">
+                  <input class="form__radio" type="radio" name="category_cafe" value="cafe" />
+                  <span>кафе/бар/ресторан</span>
+                  <span class="form-input__checker"></span>
+                </label>
+
+                <label class="form-input radio-button">
+                  <input class="form__radio" type="radio" name="category_master-class" value="master-class" />
+                  <span>мастер-класс/лекция</span>
+                  <span class="form-input__checker"></span>
+                </label>
+
+                <label class="form-input radio-button">
+                  <input class="form__radio" type="radio" name="category_party" value="party" />
+                  <span>посиделки/вечеринка</span>
+                  <span class="form-input__checker"></span>
+                </label>
+
+                <label class="form-input radio-button">
+                  <input class="form__radio" type="radio" name="category_other" value="other" />
+                  <span>другое</span>
+                  <span class="form-input__checker"></span>
+                </label>
+              </fieldset>
+            </form>
+          </div>
+          <div class="form__controls">
+            <button type="button" class="form-input form__control form__control_type_back" onclick="location.href='./index.html';">
+              отмена
+            </button>
+            <button
+              type="submit"
+              id="category-submit"
+              form="pick-category"
+              class="form-input form__control form__control_type_submit"
+            ></button>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__illustration"></div>
+          <div class="footer__block-container">
+            <div class="footer__block">
+              <h2 class="footer__title">Организатор:</h2>
+              <ul class="footer__link-list">
+                <li class="footer__list-element">
+                  <a href="https://homeless.ru/" target="_blank" class="footer__link footer__link_type_regular">Ночлежка</a>
+                </li>
+                <li class="footer__list-element">
+                  <a href="mailto:info@hedonismfest.ru" class="footer__link footer__link_type_mail">
+                    <p class="footer__link-text">info@hedonismfest.ru</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <h2 class="footer__title">Сделано с любовью:</h2>
+              <ul class="footer__link-list">
+                <li class="footer__list-element">
+                  <a href="https://fastsol.digital/" target="_blank" class="footer__link footer__link_type_regular">Fastsol
+                    Digital</a>
+                </li>
+                <li class="footer__list-element">
+                  <a href="https://shishki.co/" target="_blank"
+                    class="footer__link footer__link_type_regular">shishki.collective</a>
+                </li>
+                <li class="footer__list-element">
+                  <a href="https://practicum.yandex.ru/" target="_blank"
+                    class="footer__link footer__link_type_regular">студентами Яндекс.Практикума</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <h2 class="footer__title">Мы в соцсетях:</h2>
+              <ul class="footer__link-list footer__link-list_type_social">
+                <li class="footer__list-element">
+                  <a href="#" target="_blank" class="footer__link footer__link_type_social">
+                    <img class="footer__social-icon" src="./images/facebook-logo.svg" alt="Логотип Facebook">
+                  </a>
+                </li>
+                <li class="footer__list-element">
+                  <a href="#" target="_blank" class="footer__link footer__link_type_social">
+                    <img class="footer__social-icon" src="./images/instagram-logo.svg" alt="Логотип Instagram">
+                  </a>
+                </li>
+                <li class="footer__list-element">
+                  <a href="#" target="_blank" class="footer__link footer__link_type_social">
+                    <img class="footer__social-icon" src="./images/vkontakte-logo.svg" alt="Логотип Вконтакте">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="popup popup_type_menu">
+        <div class="popup__container">
+          <div class="popup__content">
+            <p class="popup__navigation-text">ваш город:</p>
+            <button class="popup__change-city-button page__button" type="button">
+              <span class="popup__city-name">Санкт-Петербург</span>
+              <img src="./images/change-city.svg" alt="сменить город" class="popup__change-city-button-picture">
+            </button>
+            <p class="popup__navigation-text">навигация</p>
+            <nav class="popup__navigation">
+              <ul class="popup__list">
+                <li class="popup__list-item">
+                  <a href="#" class="popup__link page__link" target="_blank">куда пойти</a>
+                </li>
+                <li class="popup__list-item">
+                  <a href="#" class="popup__link page__link" target="_blank">стать участником</a>
+                </li>
+                <li class="popup__list-item">
+                  <a href="#" class="popup__link page__link" target="_blank">о фестивале</a>
+                </li>
+              </ul>
+            </nav>
+            <img src="./images/popup-logo.svg" alt="Ночлежка" class="popup__logo">
+            <button class="popup__open-donate-button page__button" type="button">
+              <span class="popup__open-donate-button-text">пожертвовать</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup_type_change-city">
+        <div class="popup__container">
+          <div class="popup__content">
+            <button class="popup__back-button page__button" type="button">
+              <img src="./images/back.svg" alt="назад" class="popup__back-button-picture">
+              <span class="popup__back-button-text">назад</span>
+            </button>
+            <p class="popup__navigation-text">ваш город:</p>
+            <form name="change-city" class="popup__change-city-form">
+              <label for="Moscow" class="popup__change-city-label">
+                <span>Москва</span>
+                <input type="radio" name="City" id="Moscow" value="Москва" class="popup__form-radio">
+                <span class="popup__pseudo-item"></span>
+              </label>
+              <label for="Sanct-Piterburg" class="popup__change-city-label"> <span>Санкт-Петербург</span>
+                <input type="radio" name="City" id="Sanct-Piterburg" value="Санкт-Петербург" class="popup__form-radio"
+                  checked>
+                <span class="popup__pseudo-item"></span>
+              </label>
+              <label for="Sochi" class="popup__change-city-label"> <span>Сочи</span>
+                <input type="radio" name="City" id="Sochi" value="Сочи" class="popup__form-radio">
+                <span class="popup__pseudo-item"></span>
+              </label>
+              <label for="Kaluga" class="popup__change-city-label"> <span>Калуга</span>
+                <input type="radio" name="City" id="Kaluga" value="Калуга" class="popup__form-radio">
+                <span class="popup__pseudo-item"></span>
+              </label>
+              <label for="Ekaterinburg" class="popup__change-city-label"> <span>Екатеринбург</span>
+                <input type="radio" name="City" id="Ekaterinburg" value="Екатеринбург" class="popup__form-radio">
+                <span class="popup__pseudo-item"></span>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup_type_donate">
+        <div class="popup__container popup__container_type_donate">
+          <form class="popup__donate-form" name="donate" id="donate">
+            <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
+            <button type="button" class="popup__donate-close-button page__button">
+              <span class="popup__donate-close-button-text">пожертвовать</span>
+              <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
+            </button>
+            <p class="popup__donate-text">сумма</p>
+            <div class="popup__sum-of-money-container">
+              <button type="button" class="popup__sum-of-money popup__sum-of-money_active page__button">
+                <span class="popup__sum-of-money-text">100 ₽</span>
+              </button>
+              <button type="button" class="popup__sum-of-money page__button">
+                <span class="popup__sum-of-money-text">300 ₽</span>
+              </button>
+              <button type="button" class="popup__sum-of-money page__button">
+                <span class="popup__sum-of-money-text">500 ₽</span>
+              </button>
+              <button type="button" class="popup__sum-of-money page__button">
+                <span class="popup__sum-of-money-text">1000 ₽</span>
+              </button>
+              <button type="button" class="popup__sum-of-money page__button">
+                <span class="popup__sum-of-money-text">3000 ₽</span>
+              </button>
+              <input type="text" name="sum-of-money" id="sum-of-money" placeholder="другая сумма"
+                class="popup__sum-of-money-input">
+            </div>
+            <p class="popup__donate-text">email</p>
+            <input type="email" name="email" id="email" placeholder="укажите почту для отправки чека"
+              class="popup__email-input" required>
+            <p class="popup__donate-text">способ оплаты</p>
+            <fieldset class="popup__payment-method">
+              <label for="card" class="popup__payment-method-label">
+                <input type="radio" name="payment" id="card" value="банковской картой" class="popup__form-radio" checked>
+                <span class="popup__pseudo-item popup__pseudo-item_payment"></span>
+                <span>банковской картой</span>
+              </label>
+              <label for="paypal" class="popup__payment-method-label">
+                <input type="radio" name="payment" id="paypal" value="paypal" class="popup__form-radio">
+                <span class="popup__pseudo-item popup__pseudo-item_payment"></span>
+                <span>PayPal</span>
+              </label>
+            </fieldset>
+            <p class="popup__offer">Нажимая кнопку «пожертвовать» вы соглашаетесь с условиями <a href="#"
+                class="popup__offer popup__offer_color_blue page__link" target="_blank">оферты</a>, <a href="#"
+                class="popup__offer popup__offer_color_blue page__link" target="_blank">политики</a> в отношении обработки
+              и защиты персональных данных и даёте <a href="#" class="popup__offer popup__offer_color_blue page__link"
+                target="_blank">согласие</a> на их обработку</p>
+          </form>
+          <button class="popup__donate-button page__button" type="submit" form="donate">
+            <span class="popup__donate-button-text">перейти к оплате</span>
+          </button>
+        </div>
+      </div>
+
+    <script src="scripts/header.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/form-validator.js"></script>
+  </body>
+</html>
