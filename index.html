@@ -402,17 +402,18 @@
     </div>
   </div>
 
+<!-- добавить класс popup_opened для открытия попапа -->
   <div class="popup popup_type_donate">
     <div class="popup__container popup__container_type_donate">
       <form class="popup__donate-form" name="donate" id="donate">
         <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
-        <div class="popup__donate-head">
-        <p class="popup__donate-close-button-text">пожертвовать</p>
-        <button type="button" class="popup__donate-close-button page__button">
-          <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
+        <div class="popup__head">
+        <p class="popup__title">пожертвовать</p>
+        <button type="button" class="popup__close-button page__button">
+          <img src="./images/close-icon.svg" alt="закрыть" class="popup__close-button-picture">
         </button>
       </div>
-        <p class="popup__donate-text">сумма</p>
+        <p class="popup__text">сумма</p>
         <div class="popup__sum-of-money-container">
           <button type="button" class="popup__sum-of-money popup__sum-of-money_active page__button">
             <span class="popup__sum-of-money-text">100 ₽</span>
@@ -432,10 +433,10 @@
           <input type="number" min="1" name="sum-of-money" id="sum-of-money" placeholder="другая сумма"
             class="popup__sum-of-money-input">
         </div>
-        <p class="popup__donate-text">email</p>
+        <p class="popup__text">email</p>
         <input type="email" name="email" id="email" placeholder="укажите почту для отправки чека"
           class="popup__email-input" required>
-        <p class="popup__donate-text">способ оплаты</p>
+        <p class="popup__text">способ оплаты</p>
         <fieldset class="popup__payment-method">
           <label for="card" class="popup__payment-method-label">
             <input type="radio" name="payment" id="card" value="банковской картой" class="popup__form-radio" checked>
@@ -460,27 +461,28 @@
     </div>
   </div>
 
-  <div class="popup popup_type_ticket popup_opened">
+<!-- добавить класс popup_opened для открытия попапа -->
+  <div class="popup popup_type_ticket">
     <div class="popup__container popup__container_type_ticket">
       <form class="popup__ticket-form" name="ticket" id="ticket">
         <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
-        <div class="popup__donate-head">
-          <p class="popup__donate-close-button-text">купить билет</p>
-          <button type="button" class="popup__donate-close-button page__button">
-            <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
+        <div class="popup__head">
+          <p class="popup__title">купить билет</p>
+          <button type="button" class="popup__close-button page__button">
+            <img src="./images/close-icon.svg" alt="закрыть" class="popup__close-button-picture">
           </button>
         </div>
-        <p class="popup__donate-text">сумма и количество</p>
+        <p class="popup__text">сумма и количество</p>
         <div class="popup__ticket-sum">
           <p class="popup__ticket-price">500 &#8381</p>
           <div class="popup__ticket-controls">
             <input type="button" value=" " class="popup__ticket-btn-decr"><input type="number" min="1" class="popup__ticket-qty"><input type="button" value=" " class="popup__ticket-btn-incr">
           </div>
         </div>
-        <p class="popup__donate-text">email</p>
+        <p class="popup__text">email</p>
         <input type="email" name="email" id="email" placeholder="укажите почту для отправки чека"
           class="popup__email-input" required>
-        <p class="popup__donate-text">способ оплаты</p>
+        <p class="popup__text">способ оплаты</p>
         <fieldset class="popup__payment-method">
           <label for="card" class="popup__payment-method-label">
             <input type="radio" name="payment" id="card" value="банковской картой" class="popup__form-radio" checked>
