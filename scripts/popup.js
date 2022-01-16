@@ -12,7 +12,7 @@ const popupDonate = document.querySelector('.popup_type_donate');
 const closeDonateButton = popupDonate.querySelector('.popup__close-button');
 const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money');
 const inputSum = popupDonate.querySelector('.popup__sum-of-money-input');
-const donateFormElement = document.querySelector('.popup__donate-form');
+const donateFormElement = document.querySelector('.popup__form');
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');

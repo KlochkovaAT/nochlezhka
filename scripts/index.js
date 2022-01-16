@@ -175,7 +175,7 @@ window.addEventListener('scroll', () => {
   prevScroll = curScroll;
 });
 
-const donateFormElement = document.querySelector('.popup__donate-form');
+const donateFormElement = document.querySelector('.popup__form');
 
 donateFormElement.addEventListener('submit', (evt) => {
   evt.preventDefault();
