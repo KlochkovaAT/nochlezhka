@@ -5,7 +5,6 @@ const categotySubmitBtn = document.querySelector('#category-submit');
 const formRadios = document.querySelectorAll('.form__radio-unit');
 
 
-
 if (categoryForm) {
   let currentChoice;
 
@@ -77,30 +76,5 @@ const switchCategoryRadio = (radio, value) => {
   }
 };
 
-const masterClassContactsForm = document.querySelector('#master-class-contacts');
-const partyContactsForm = document.querySelector('#party-contacts');
-const cafeContactsForm = document.querySelector('#cafe-contacts-form');
-const otherContactsForm = document.querySelector('#other-contacts');
 
 
-masterClassContactsForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  location.href = "./pageThanksForBid.html";
-});
-
-
-cafeContactsForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  location.href = "./pageThanksForBid.html";
-});
-
-
-partyContactsForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  location.href = "./pageThanksForBid.html";
-});
-
-otherContactsForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  location.href = "./pageThanksForBid.html";
-});
