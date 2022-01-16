@@ -539,7 +539,7 @@
           <img src="./images/slider.svg" alt="слайдер" class="popup__slider" />
           <div class="popup__head">
             <p class="popup__title">купить билет</p>
-            <button type="button" class="popup__close-button page__button">
+            <button id="closeButton" type="button" class="popup__close-button page__button">
               <img src="./images/close-icon.svg" alt="закрыть" class="popup__close-button-picture" />
             </button>
           </div>
@@ -547,11 +547,13 @@
           <div class="popup__ticket-sum">
             <p class="popup__ticket-price"><span id="popup__ticket-price">500</span> &#8381;</p>
             <div class="popup__ticket-controls">
-              <input type="button" value=" " class="popup__ticket-btn-decr" /><input
+              <input type="button" value=" " class="popup__ticket-btn-decr" />
+              <input
                 type="number"
                 min="1"
                 class="popup__ticket-qty"
-              /><input type="button" value=" " class="popup__ticket-btn-incr" />
+              />
+              <input type="button" value=" " class="popup__ticket-btn-incr" />
             </div>
           </div>
           <p class="popup__text">email</p>
