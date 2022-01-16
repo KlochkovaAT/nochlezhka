@@ -18,6 +18,7 @@ const buttonDecr = document.querySelector('.popup__ticket-btn-decr');
 const buttonIncr = document.querySelector('.popup__ticket-btn-incr');
 const inputQty = document.querySelector('.popup__ticket-qty');
 const totalSum = document.querySelector('#popup__ticket-price');
+const ticketForm = document.querySelector('#ticket');
 const price = 500;
 
 function openPopup(popup) {
@@ -114,3 +115,14 @@ buttonIncr.addEventListener('click', function () {
 });
 
 inputQty.addEventListener('change', recalculateSum);
+
+ticketForm.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  const formInfo = {
+    count: inputQty.value,
+    sum : totalSum.textContent,
+    email: ticketForm.querySelector('#email-ticket').value,
+    typePayment: ticketForm.querySelector('input[name="payment"]:checked').value
+  }
+  console.log(formInfo);
+});
