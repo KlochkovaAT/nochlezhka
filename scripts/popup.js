@@ -8,23 +8,25 @@ const labelCity = formChangeCity.querySelectorAll('.popup__form-radio');
 const cityName = popupMenu.querySelector('.popup__city-name');
 const openDonateButtonInPopup = popupMenu.querySelector('.popup__open-donate-button');
 const openDonateButtonInHeader = document.querySelector('.header__donate-button');
+const donateFormElement = document.querySelector('.popup__form');
+const headerMain = document.querySelector('.header');
+const freePrice = document.querySelector('.popup__sum-of-money-input');
+const ticketForm = document.querySelector('#ticket');
+const getPriceTicket = document.querySelector('.events__card-image');
+
 const popupDonate = document.querySelector('.popup_type_donate');
 const closeDonateButton = popupDonate.querySelector('.popup__close-button');
 const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money');
 const inputSum = popupDonate.querySelector('.popup__sum-of-money-input');
-const donateFormElement = document.querySelector('.popup__form');
-const headerMain = document.querySelector('.header');
-const freePrice = document.querySelector('.popup__sum-of-money-input');
-const paymentMetod = popupDonate.querySelectorAll('.popup__payment-method');
-const metod = popupDonate.querySelectorAll('.popup__payment-method-label');
-const buttonDecr = document.querySelector('.popup__ticket-btn-decr');
-const buttonIncr = document.querySelector('.popup__ticket-btn-incr');
-const inputQty = document.querySelector('.popup__ticket-qty');
-const totalSum = document.querySelector('#popup__ticket-price');
-const ticketForm = document.querySelector('#ticket');
-const getPriceTicket = document.querySelector('.events__card-image');
+
+
 const popupTicket = document.querySelector('.popup_type_ticket');
-const closePriceTicket = document.querySelector('#closeButton');
+const closePriceTicket = popupTicket.querySelector('.popup__close-button');
+const buttonDecr = popupTicket.querySelector('.popup__ticket-btn-decr');
+const buttonIncr = popupTicket.querySelector('.popup__ticket-btn-incr');
+const inputQty = popupTicket.querySelector('.popup__ticket-qty');
+const totalSum = popupTicket.querySelector('#popup__ticket-price');
+
 const price = 500;
 
 function openPopup(popup) {
@@ -149,7 +151,7 @@ ticketForm.addEventListener('submit', (evt) => {
     count: inputQty.value,
     sum : totalSum.textContent,
     email: ticketForm.querySelector('#email-ticket').value,
-    typePayment: ticketForm.querySelector('input[name="payment"]:checked').value
+    typePayment: ticketForm.querySelector('input[name="payment-ticket"]:checked').value
   }
   console.log(formInfo);
 });

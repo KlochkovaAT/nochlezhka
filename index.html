@@ -533,13 +533,13 @@
     </div>
 
     <!-- добавить класс popup_opened для открытия попапа -->
-    <div class="popup popup_type_ticket popup_opened">
+    <div class="popup popup_type_ticket">
       <div class="popup__container popup__container_type_ticket">
         <form class="popup__form" name="ticket" id="ticket">
           <img src="./images/slider.svg" alt="слайдер" class="popup__slider" />
           <div class="popup__head">
             <p class="popup__title">купить билет</p>
-            <button id="closeButton" type="button" class="popup__close-button page__button">
+            <button type="button" class="popup__close-button page__button">
               <img src="./images/close-icon.svg" alt="закрыть" class="popup__close-button-picture" />
             </button>
           </div>
@@ -568,13 +568,13 @@
           />
           <p class="popup__text">способ оплаты</p>
           <fieldset class="popup__payment-method">
-            <label for="card" class="popup__payment-method-label">
-              <input type="radio" name="payment" id="card-ticket" value="банковской картой" class="popup__form-radio" checked />
+            <label for="card-ticket" class="popup__payment-method-label">
+              <input type="radio" name="payment-ticket" id="card-ticket" value="банковской картой" class="popup__form-radio" checked />
               <span class="popup__pseudo-item popup__pseudo-item_payment"></span>
               <span>банковской картой</span>
             </label>
-            <label for="paypal" class="popup__payment-method-label">
-              <input type="radio" name="payment" id="paypal-ticket" value="paypal" class="popup__form-radio" />
+            <label for="paypal-ticket" class="popup__payment-method-label">
+              <input type="radio" name="payment-ticket" id="paypal-ticket" value="paypal" class="popup__form-radio" />
               <span class="popup__pseudo-item popup__pseudo-item_payment"></span>
               <span>PayPal</span>
             </label>
