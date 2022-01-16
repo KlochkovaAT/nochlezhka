@@ -85,5 +85,6 @@ inputSum.addEventListener('click', function () {
 donateFormElement.addEventListener('submit', (evt) => {
   evt.preventDefault();
   closePopup(popupDonate);
+  location.href = 'pageForHelp.html'
   donateFormElement.reset();
 });
