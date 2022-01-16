@@ -12,13 +12,12 @@ const donateFormElement = document.querySelector('.popup__form');
 const headerMain = document.querySelector('.header');
 const freePrice = document.querySelector('.popup__sum-of-money-input');
 const ticketForm = document.querySelector('#ticket');
-const getPriceTicket = document.querySelector('.events__card-image');
+const eventCardImages = document.querySelectorAll('.events__card-image');
 
 const popupDonate = document.querySelector('.popup_type_donate');
 const closeDonateButton = popupDonate.querySelector('.popup__close-button');
 const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money');
 const inputSum = popupDonate.querySelector('.popup__sum-of-money-input');
-
 
 const popupTicket = document.querySelector('.popup_type_ticket');
 const closePriceTicket = popupTicket.querySelector('.popup__close-button');
@@ -39,14 +38,17 @@ function closePopup(popup) {
   headerMain.classList.add('header_sticky');
 }
 
-getPriceTicket.addEventListener('click', function () {
-  openPopup(popupTicket);
-});
+if (eventCardImages) {
+  eventCardImages.forEach(function (item) {
+    item.addEventListener('click', function () {
+      openPopup(popupTicket);
+    });
+  });
+}
 
 closePriceTicket.addEventListener('click', function () {
   closePopup(popupTicket);
 });
-
 
 menuButton.addEventListener('click', function () {
   popupMenu.classList.toggle('popup_opened');
@@ -115,14 +117,14 @@ inputSum.addEventListener('click', function () {
 
 donateFormElement.addEventListener('submit', (evt) => {
   evt.preventDefault();
-  if(donateSum === 0) {
+  if (donateSum === 0) {
     donateSum = freePrice.value;
   }
   const formInfo = {
-    sum : donateSum,
+    sum: donateSum,
     email: donateFormElement.querySelector('#email').value,
-    typePayment: donateFormElement.querySelector('input[name="payment"]:checked').value
-  }
+    typePayment: donateFormElement.querySelector('input[name="payment"]:checked').value,
+  };
   console.log(formInfo);
   closePopup(popupDonate);
   location.href = 'pageForHelp.html';
@@ -151,9 +153,9 @@ ticketForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
   const formInfo = {
     count: inputQty.value,
-    sum : totalSum.textContent,
+    sum: totalSum.textContent,
     email: ticketForm.querySelector('#email-ticket').value,
-    typePayment: ticketForm.querySelector('input[name="payment-ticket"]:checked').value
-  }
+    typePayment: ticketForm.querySelector('input[name="payment-ticket"]:checked').value,
+  };
   console.log(formInfo);
 });
