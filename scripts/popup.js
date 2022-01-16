@@ -14,6 +14,10 @@ const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money');
 const inputSum = popupDonate.querySelector('.popup__sum-of-money-input');
 const donateFormElement = document.querySelector('.popup__form');
 const headerMain = document.querySelector('.header');
+const email = document.querySelector('.popup__email-input');
+const freePrice = document.querySelector('.popup__sum-of-money-input');
+const paymentMetod = popupDonate.querySelectorAll('.popup__payment-method');
+const metod = popupDonate.querySelectorAll('.popup__payment-method-label');
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');
@@ -70,11 +74,14 @@ closeDonateButton.addEventListener('click', function () {
   closePopup(popupDonate);
 });
 
+let price = '';
+
 sumOfMoneyButton.forEach(function (item) {
   item.addEventListener('click', function () {
     sumOfMoneyButton.forEach(function (item) {
       item.classList.remove('popup__sum-of-money_active');
     });
+    price = item.textContent;
     item.classList.add('popup__sum-of-money_active');
   });
 });
@@ -85,9 +92,19 @@ inputSum.addEventListener('click', function () {
   });
 });
 
+
+
 donateFormElement.addEventListener('submit', (evt) => {
   evt.preventDefault();
+  if(price) {
+    console.log('сумма:' + price);
+  } else {
+    console.log(freePrice.value + " р");
+  }
+  console.log('email: ' + email.value);
+  console.log('способ оплаты: ' );
   closePopup(popupDonate);
+
   location.href = 'pageForHelp.html'
   donateFormElement.reset();
 });
