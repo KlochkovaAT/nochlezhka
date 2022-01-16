@@ -13,13 +13,16 @@ const closeDonateButton = popupDonate.querySelector('.popup__close-button');
 const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money');
 const inputSum = popupDonate.querySelector('.popup__sum-of-money-input');
 const donateFormElement = document.querySelector('.popup__form');
+const headerMain = document.querySelector('.header');
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');
+  headerMain.classList.remove('header_sticky');
 }
 
 function closePopup(popup) {
   popup.classList.remove('popup_opened');
+  headerMain.classList.add('header_sticky');
 }
 
 menuButton.addEventListener('click', function () {
