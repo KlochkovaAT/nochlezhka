@@ -533,7 +533,7 @@
     </div>
 
     <!-- добавить класс popup_opened для открытия попапа -->
-    <div class="popup popup_type_ticket">
+    <div class="popup popup_type_ticket popup_opened">
       <div class="popup__container popup__container_type_ticket">
         <form class="popup__form" name="ticket" id="ticket">
           <img src="./images/slider.svg" alt="слайдер" class="popup__slider" />
@@ -552,8 +552,9 @@
                 type="number"
                 min="1"
                 class="popup__ticket-qty"
-              />
-              <input type="button" value=" " class="popup__ticket-btn-incr" />
+                value="1"
+                readonly
+              /><input type="button" value=" " class="popup__ticket-btn-incr" />
             </div>
           </div>
           <p class="popup__text">email</p>
