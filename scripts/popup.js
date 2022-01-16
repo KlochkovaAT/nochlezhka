@@ -14,7 +14,6 @@ const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money');
 const inputSum = popupDonate.querySelector('.popup__sum-of-money-input');
 const donateFormElement = document.querySelector('.popup__form');
 const headerMain = document.querySelector('.header');
-const email = document.querySelector('.popup__email-input');
 const freePrice = document.querySelector('.popup__sum-of-money-input');
 const paymentMetod = popupDonate.querySelectorAll('.popup__payment-method');
 const metod = popupDonate.querySelectorAll('.popup__payment-method-label');
@@ -23,6 +22,9 @@ const buttonIncr = document.querySelector('.popup__ticket-btn-incr');
 const inputQty = document.querySelector('.popup__ticket-qty');
 const totalSum = document.querySelector('#popup__ticket-price');
 const ticketForm = document.querySelector('#ticket');
+const getPriceTicket = document.querySelector('.events__card-image');
+const popupTicket = document.querySelector('.popup_type_ticket');
+const closePriceTicket = document.querySelector('#closeButton');
 const price = 500;
 
 function openPopup(popup) {
@@ -34,6 +36,15 @@ function closePopup(popup) {
   popup.classList.remove('popup_opened');
   headerMain.classList.add('header_sticky');
 }
+
+getPriceTicket.addEventListener('click', function () {
+  openPopup(popupTicket);
+});
+
+closePriceTicket.addEventListener('click', function () {
+  closePopup(popupTicket);
+});
+
 
 menuButton.addEventListener('click', function () {
   popupMenu.classList.toggle('popup_opened');
@@ -80,14 +91,14 @@ closeDonateButton.addEventListener('click', function () {
   closePopup(popupDonate);
 });
 
-let price = '';
+let donateSum = '';
 
 sumOfMoneyButton.forEach(function (item) {
   item.addEventListener('click', function () {
     sumOfMoneyButton.forEach(function (item) {
       item.classList.remove('popup__sum-of-money_active');
     });
-    price = item.textContent;
+    donateSum = item.textContent;
     item.classList.add('popup__sum-of-money_active');
   });
 });
@@ -98,17 +109,17 @@ inputSum.addEventListener('click', function () {
   });
 });
 
-
-
 donateFormElement.addEventListener('submit', (evt) => {
   evt.preventDefault();
-  if(price) {
-    console.log('сумма:' + price);
-  } else {
-    console.log(freePrice.value + " р");
+  if(!donateSum) {
+    donateSum = freePrice.value + " ₽";
   }
-  console.log('email: ' + email.value);
-  console.log('способ оплаты: ' );
+  const formInfo = {
+    sum : donateSum,
+    email: donateFormElement.querySelector('#email').value,
+    typePayment: donateFormElement.querySelector('input[name="payment"]:checked').value
+  }
+  console.log(formInfo);
   closePopup(popupDonate);
   location.href = 'pageForHelp.html';
   donateFormElement.reset();
