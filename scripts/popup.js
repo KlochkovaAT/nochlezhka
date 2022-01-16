@@ -18,6 +18,12 @@ const email = document.querySelector('.popup__email-input');
 const freePrice = document.querySelector('.popup__sum-of-money-input');
 const paymentMetod = popupDonate.querySelectorAll('.popup__payment-method');
 const metod = popupDonate.querySelectorAll('.popup__payment-method-label');
+const buttonDecr = document.querySelector('.popup__ticket-btn-decr');
+const buttonIncr = document.querySelector('.popup__ticket-btn-incr');
+const inputQty = document.querySelector('.popup__ticket-qty');
+const totalSum = document.querySelector('#popup__ticket-price');
+const ticketForm = document.querySelector('#ticket');
+const price = 500;
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');
@@ -104,7 +110,35 @@ donateFormElement.addEventListener('submit', (evt) => {
   console.log('email: ' + email.value);
   console.log('способ оплаты: ' );
   closePopup(popupDonate);
-
-  location.href = 'pageForHelp.html'
+  location.href = 'pageForHelp.html';
   donateFormElement.reset();
+});
+
+function recalculateSum() {
+  totalSum.textContent = inputQty.value * price;
+}
+
+buttonDecr.addEventListener('click', function () {
+  if (inputQty.value > 1) {
+    inputQty.value--;
+  }
+  recalculateSum();
+});
+
+buttonIncr.addEventListener('click', function () {
+  inputQty.value++;
+  recalculateSum();
+});
+
+inputQty.addEventListener('change', recalculateSum);
+
+ticketForm.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  const formInfo = {
+    count: inputQty.value,
+    sum : totalSum.textContent,
+    email: ticketForm.querySelector('#email-ticket').value,
+    typePayment: ticketForm.querySelector('input[name="payment"]:checked').value
+  }
+  console.log(formInfo);
 });
