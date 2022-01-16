@@ -80,27 +80,29 @@ function getCheckedRadio() {
   });
 }
 
+let donateSum = 0;
+
 openDonateButtonInPopup.addEventListener('click', function () {
   closePopup(popupMenu);
   openPopup(popupDonate);
+  donateSum = 0;
 });
 
 openDonateButtonInHeader.addEventListener('click', function () {
   openPopup(popupDonate);
+  donateSum = 0;
 });
 
 closeDonateButton.addEventListener('click', function () {
   closePopup(popupDonate);
 });
 
-let donateSum = '';
-
 sumOfMoneyButton.forEach(function (item) {
   item.addEventListener('click', function () {
     sumOfMoneyButton.forEach(function (item) {
       item.classList.remove('popup__sum-of-money_active');
     });
-    donateSum = item.textContent;
+    donateSum = item.value;
     item.classList.add('popup__sum-of-money_active');
   });
 });
@@ -113,8 +115,8 @@ inputSum.addEventListener('click', function () {
 
 donateFormElement.addEventListener('submit', (evt) => {
   evt.preventDefault();
-  if(!donateSum) {
-    donateSum = freePrice.value + " ₽";
+  if(donateSum === 0) {
+    donateSum = freePrice.value;
   }
   const formInfo = {
     sum : donateSum,
