@@ -14,6 +14,11 @@ const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money');
 const inputSum = popupDonate.querySelector('.popup__sum-of-money-input');
 const donateFormElement = document.querySelector('.popup__form');
 const headerMain = document.querySelector('.header');
+const buttonDecr = document.querySelector('.popup__ticket-btn-decr');
+const buttonIncr = document.querySelector('.popup__ticket-btn-incr');
+const inputQty = document.querySelector('.popup__ticket-qty');
+const totalSum = document.querySelector('#popup__ticket-price');
+const price = 500;
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');
@@ -88,6 +93,24 @@ inputSum.addEventListener('click', function () {
 donateFormElement.addEventListener('submit', (evt) => {
   evt.preventDefault();
   closePopup(popupDonate);
-  location.href = 'pageForHelp.html'
+  location.href = 'pageForHelp.html';
   donateFormElement.reset();
 });
+
+function recalculateSum() {
+  totalSum.textContent = inputQty.value * price;
+}
+
+buttonDecr.addEventListener('click', function () {
+  if (inputQty.value > 1) {
+    inputQty.value--;
+  }
+  recalculateSum();
+});
+
+buttonIncr.addEventListener('click', function () {
+  inputQty.value++;
+  recalculateSum();
+});
+
+inputQty.addEventListener('change', recalculateSum);
