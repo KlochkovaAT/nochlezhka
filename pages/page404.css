@@ -115,12 +115,12 @@
 @import url(../blocks/footer/__title/footer__title.css);
 
 @import url(../blocks/notification/notification.css);
-@import url(../blocks/notification/_white/notification_white.css);
+@import url(../blocks/notification/_theme/notification_theme_light.css);
 @import url(../blocks/notification/__link/notification__link.css);
-@import url(../blocks/notification/__link/_dark/notification__link_dark.css);
+@import url(../blocks/notification/__link/_theme/notification__link_theme_light.css);
 @import url(../blocks/notification/__text-container/notification__text-container.css);
-@import url(../blocks/notification/__text-container/_dark/notification__text-container_dark.css);
+@import url(../blocks/notification/__text-container/_theme/notification__text-container_theme_light.css);
 @import url(../blocks/notification/__text/notification__text.css);
 @import url(../blocks/notification/__title/notification__title.css);
 @import url(../blocks/notification/__image/notification__image.css);
-@import url(../blocks/notification/__image/_rotated/notification__image_rotatable.css);
+@import url(../blocks/notification/__image/_dynamic/notification__image_dynamic_rotatable.css);
