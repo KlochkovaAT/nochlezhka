@@ -14,3 +14,9 @@
     max-width: 320px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .notification__text-container {
+    margin: auto 0;
+  }
+}

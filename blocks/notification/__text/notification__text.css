@@ -1,5 +1,4 @@
 .notification__text {
-  font-family: TT Firs Neue;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -10,7 +9,7 @@
 }
 
 @media screen and (max-width: 920px) {
-  .notification__title {
+  .notification__text {
     font-size: 20px;
     padding-top: 12px;
     padding-bottom: 20px;
