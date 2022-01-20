@@ -20,13 +20,13 @@
 
 .events__cards-container::-webkit-scrollbar-thumb {
     background-color: #7100FF;
-    border-radius: 100px;  
+    border-radius: 100px;
 }
 
 @media screen and (max-width: 700px) {
     .events__cards-container {
         margin-left: 0;
-        margin-top: 28px;
+        margin-top: 0;
     }
     .events__cards-container::-webkit-scrollbar-track {
         margin: 0 20px;
