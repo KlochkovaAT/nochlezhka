@@ -8,7 +8,6 @@
 @media screen and (max-width: 920px) {
   .notification__image {
     margin: 0 auto;
-    width: 316px;
-    height: 247px;
+    width: 295px;
   }
 }

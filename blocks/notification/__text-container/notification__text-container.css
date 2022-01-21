@@ -12,6 +12,7 @@
     margin: auto;
     grid-row-start: 2;
     max-width: 320px;
+    min-width: 315px;
   }
 }
 
