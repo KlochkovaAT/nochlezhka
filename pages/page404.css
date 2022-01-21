@@ -115,6 +115,7 @@
 @import url(../blocks/footer/__title/footer__title.css);
 
 @import url(../blocks/notification/notification.css);
+@import url(../blocks/notification/_type/notification_type_404.css);
 @import url(../blocks/notification/_theme/notification_theme_light.css);
 @import url(../blocks/notification/__link/notification__link.css);
 @import url(../blocks/notification/__link/_theme/notification__link_theme_light.css);
@@ -124,3 +125,4 @@
 @import url(../blocks/notification/__title/notification__title.css);
 @import url(../blocks/notification/__image/notification__image.css);
 @import url(../blocks/notification/__image/_dynamic/notification__image_dynamic_rotatable.css);
+@import url(../blocks/notification/__image/_type/notification__image_type_404.css);
