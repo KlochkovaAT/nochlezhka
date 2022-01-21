@@ -1,5 +1,5 @@
 .notification__link {
-  padding: 10px 24px;
+  padding: 10px 20px;
   border: 2px solid white;
   border-radius: 22px;
   text-decoration: none;
@@ -10,6 +10,8 @@
   line-height: 24px;
   margin: 0;
   display: inline-block;
+  width: 145px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 920px) {
