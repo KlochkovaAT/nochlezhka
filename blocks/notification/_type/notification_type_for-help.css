@@ -2,3 +2,11 @@
   gap: 55px;
   padding: 10px 28px;
 }
+
+@media screen and (max-width: 920px) {
+  .notification_type_for-help {
+    padding: 44px 0px;
+    gap: 40px;
+  }
+}
+
