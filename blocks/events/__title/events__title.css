@@ -5,11 +5,12 @@
     font-size: 48px;
     font-weight: 500;
     color: #3B3748;
+    letter-spacing: -0.01em;
 }
 
 @media screen and (max-width: 700px) {
     .events__title {
-        margin: 40px 20px 20px;
+        margin: 20px;
         line-height: 36px;
         font-size: 32px;
     }

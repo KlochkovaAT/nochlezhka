@@ -1,0 +1,10 @@
+.notification__image_type_404 {
+  width: 372px;
+}
+
+
+@media screen and (max-width: 920px) {
+  .notification__image_type_404 {
+    width: 310px;
+  }
+}

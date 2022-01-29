@@ -1,0 +1,17 @@
+.popup__close-button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768.98px) {
+  .popup__close-button {
+    width: 24px;
+    height: 24px;
+  }
+}

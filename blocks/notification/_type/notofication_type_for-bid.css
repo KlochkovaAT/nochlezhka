@@ -1,0 +1,11 @@
+.notofication_type_for-bid {
+  gap: 50px;
+  padding: 22px 25px;
+}
+
+@media screen and (max-width: 920px) {
+  .notofication_type_for-bid {
+    padding: 40px 0px;
+    gap: 40px;
+  }
+}

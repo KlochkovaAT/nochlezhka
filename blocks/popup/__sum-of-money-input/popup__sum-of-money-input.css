@@ -18,3 +18,24 @@
     border-radius: 24px;
   }
 }
+
+.popup__sum-of-money-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.popup__sum-of-money-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.popup__sum-of-money-input {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+.popup__sum-of-money-input:hover {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+.popup__sum-of-money-input:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}

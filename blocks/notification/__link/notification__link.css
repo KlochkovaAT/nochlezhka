@@ -1,0 +1,22 @@
+.notification__link {
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 22px;
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  display: inline-block;
+  width: 145px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 920px) {
+  .notification__link {
+    font-size: 16px;
+    padding: 8px 27px;
+  }
+}

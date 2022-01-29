@@ -8,9 +8,10 @@
 @import url(../blocks/page/__link/page__link.css);
 @import url(../blocks/page/__button/page__button.css);
 
-@import url(../blocks/content/content.css);
+@import url(../blocks/main/main.css);
 
 @import url(../blocks/header/header.css);
+@import url(../blocks/header/_sticky/header_sticky.css);
 @import url(../blocks/header/__container/header__container.css);
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__menu/header__menu.css);
@@ -60,12 +61,13 @@
 @import url(../blocks/popup/__form-radio/popup__form-radio.css);
 @import url(../blocks/popup/__pseudo-item/popup__pseudo-item.css);
 @import url(../blocks/popup/__container/_type/_donate/popup__container_type_donate.css);
-@import url(../blocks/popup/__donate-form/popup__donate-form.css);
+@import url(../blocks/popup/__form/popup__form.css);
 @import url(../blocks/popup/__slider/popup__slider.css);
-@import url(../blocks/popup/__donate-close-button/popup__donate-close-button.css);
-@import url(../blocks/popup/__donate-close-button-text/popup__donate-close-button-text.css);
-@import url(../blocks/popup/__donate-close-button-picture/popup__donate-close-button-picture.css);
-@import url(../blocks/popup/__donate-text/popup__donate-text.css);
+@import url(../blocks/popup/__head/popup__head.css);
+@import url(../blocks/popup/__close-button/popup__close-button.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__close-button-picture/popup__close-button-picture.css);
+@import url(../blocks/popup/__text/popup__text.css);
 @import url(../blocks/popup/__payment-method/popup__payment-method.css);
 @import url(../blocks/popup/__sum-of-money-container/popup__sum-of-money-container.css);
 @import url(../blocks/popup/__sum-of-money/popup__sum-of-money.css);
@@ -77,8 +79,15 @@
 @import url(../blocks/popup/__pseudo-item/_payment/popup__pseudo-item_payment.css);
 @import url(../blocks/popup/__offer/popup__offer.css);
 @import url(../blocks/popup/__offer/_color/_blue/popup__offer_color_blue.css);
-@import url(../blocks/popup/__donate-button/popup__donate-button.css);
-@import url(../blocks/popup/__donate-button-text/popup__donate-button-text.css);
+@import url(../blocks/popup/__form-button/popup__form-button.css);
+@import url(../blocks/popup/__form-button-text/popup__form-button-text.css);
+@import url(../blocks/popup/__container/_type/_ticket/popup__container_type_ticket.css);
+@import url(../blocks/popup/__ticket-sum/popup__ticket-sum.css);
+@import url(../blocks/popup/__ticket-price/popup__ticket-price.css);
+@import url(../blocks/popup/__ticket-controls/popup__ticket-controls.css);
+@import url(../blocks/popup/__ticket-qty/popup__ticket-qty.css);
+@import url(../blocks/popup/__ticket-btn-decr/popup__ticket-btn-decr.css);
+@import url(../blocks/popup/__ticket-btn-incr/popup__ticket-btn-incr.css);
 
 @import url(../blocks/events/events.css);
 @import url(../blocks/events/__wrapper/events__wrapper.css);
@@ -154,3 +163,10 @@
 @import url(../blocks/footer/__list-element/footer__list-element.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
 @import url(../blocks/footer/__title/footer__title.css);
+
+@import url(../blocks/notification/notification.css);
+@import url(../blocks/notification/__link/notification__link.css);
+@import url(../blocks/notification/__text-container/notification__text-container.css);
+@import url(../blocks/notification/__text/notification__text.css);
+@import url(../blocks/notification/__title/notification__title.css);
+@import url(../blocks/notification/__image/notification__image.css);
